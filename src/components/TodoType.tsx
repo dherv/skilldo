@@ -4,17 +4,10 @@ import {
   BlueButton,
   GreenButton,
   OrangeButton,
-} from "./TodoType.styled";
-
-interface Props {
-  type: "Book" | "Language" | "Framework" | "Project";
-}
-interface ButtonMap {
-  [key: string]: ComponentType;
-}
+} from "../styled/Globals.styled";
 
 const TodoType: FC<Props> = ({ type }) => {
-  let components: ButtonMap = {
+  let components: ColorMap = {
     Book: RedButton,
     Language: GreenButton,
     Framework: BlueButton,
@@ -24,5 +17,12 @@ const TodoType: FC<Props> = ({ type }) => {
   const TypeTodoButton = components[type];
   return <TypeTodoButton>{letter}</TypeTodoButton>;
 };
+
+interface Props {
+  type: "Book" | "Language" | "Framework" | "Project";
+}
+interface ColorMap {
+  [key: string]: ComponentType;
+}
 
 export default TodoType;
