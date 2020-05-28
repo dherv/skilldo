@@ -50,7 +50,7 @@
     "@storybook/preset-create-react-app": "^3.0.0",
     "@storybook/react": "^5.3.19",
     "@types/styled-components": "^5.1.0",
-    "cypress": "^4.6.0",
+    "cypress": "4.7.0",
     "destyle.css": "^1.0.11",
     "styled-components": "^5.1.1"
   }

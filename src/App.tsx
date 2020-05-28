@@ -1,12 +1,10 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import TodoType from "./components/TodoType";
+import TodoSettings from "./components/TodoSettings";
 
 function App() {
   return (
     <div>
-      <TodoType type="Book" />
+      <TodoSettings onTogglePopover={() => {}} />
     </div>
   );
 }
