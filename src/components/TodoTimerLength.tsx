@@ -1,11 +1,10 @@
 import React, { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
-import styles from "./TodoTimerLength.module.css";
 import { IconText } from "../styled/Globals.styled";
 
 const TodoTimerLength: FC<Props> = ({ timerLength }) => (
-  <div className={styles.container}>
+  <div>
     <FontAwesomeIcon icon={faClock} />
     <IconText as="span">{timerLength}</IconText>
   </div>
