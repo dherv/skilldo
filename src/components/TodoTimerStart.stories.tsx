@@ -9,7 +9,7 @@ export default {
 };
 
 const propsData = {
-  timerStartDate: new Date(2020, 5, 1),
+  startDate: new Date(2020, 5, 1),
 };
 
 export const Default = () => <TodoTimerStart {...propsData} />;

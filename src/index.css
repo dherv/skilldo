@@ -1,7 +1,11 @@
 /* globals */
 
+:root {
+  --text-color-light-grey: #ada7a7;
+  --text-color: #484848;
+}
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: #484848;
+  color: var(--text-color);
 }

@@ -3,7 +3,7 @@ import { render, fireEvent, screen } from "@testing-library/react";
 import TodoTimerStart from "./TodoTimerStart";
 
 const props = {
-  timerStartDate: new Date(2020, 5, 1),
+  startDate: new Date(2020, 5, 1),
 };
 
 test("should display the date", () => {

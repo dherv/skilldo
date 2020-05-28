@@ -2,23 +2,24 @@ import React, { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { IconText } from "../styled/Globals.styled";
+import styles from "./TodoTimerStart.module.css";
 
-const TodoTimerStart: FC<Props> = ({ timerStartDate }) => {
+const TodoTimerStart: FC<Props> = ({ startDate }) => {
   var options = {
     month: "short",
     day: "numeric",
   };
-  const startDate = timerStartDate.toLocaleDateString("en-US", options);
+  const startDateString = startDate.toLocaleDateString("en-US", options);
   return (
-    <div>
+    <div className={styles.container}>
       <FontAwesomeIcon icon={faPlay} />
-      <IconText>{startDate}</IconText>
+      <IconText as="span">{startDateString}</IconText>
     </div>
   );
 };
 
 interface Props {
-  timerStartDate: Date;
+  startDate: Date;
 }
 
 export default TodoTimerStart;
