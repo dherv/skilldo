@@ -6,7 +6,7 @@ const props = {
   onTogglePopover: jest.fn(),
 };
 
-test("renders learn react link", () => {
+test("should display a button", () => {
   const { getByRole } = render(<TodoSettings {...props} />);
   const buttonElement = getByRole("button");
   expect(buttonElement).toBeInTheDocument();
