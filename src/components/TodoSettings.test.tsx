@@ -3,7 +3,7 @@ import { render, fireEvent, screen } from "@testing-library/react";
 import TodoSettings from "./TodoSettings";
 
 const props = {
-  onTogglePopover: jest.fn(),
+  onToggleEdit: jest.fn(),
 };
 
 test("should display a button", () => {
@@ -14,6 +14,6 @@ test("should display a button", () => {
 
 test("click should toggle popover", () => {
   render(<TodoSettings {...props} />);
-  fireEvent.click(screen.getByRole("button"));
-  expect(props.onTogglePopover).toHaveBeenCalled();
+  fireEvent.click(screen.getByTitle("icon-settings"));
+  expect(props.onToggleEdit).toHaveBeenCalled();
 });

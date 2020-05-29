@@ -10,7 +10,7 @@ export default {
 };
 
 export const actionsData = {
-  onTogglePopover: action("onTogglePopover"),
+  onToggleEdit: action("onToggleEdit"),
 };
 
 export const Default = () => <TodoSettings {...actionsData} />;
