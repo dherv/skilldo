@@ -5,10 +5,13 @@ import Todo from "./Todo";
 
 //  prevent literal types (eg. 'Book') being 'widened' to type string
 const props = {
-  title: "React Docs",
-  type: "Book" as const,
-  startDate: new Date(2020, 5, 1),
-  timerLength: 30,
+  todo: {
+    id: 1,
+    title: "React Docs",
+    type: "Book" as const,
+    startDate: new Date(2020, 5, 1),
+    timerLength: 30,
+  },
   onToggleEdit: jest.fn(),
 };
 
