@@ -7,3 +7,9 @@ export interface ITodo {
   startDate: Date;
   timerLength: number;
 }
+
+export interface ITodoModule {
+  id: string | number;
+  title: string;
+  todos: ITodo[];
+}
