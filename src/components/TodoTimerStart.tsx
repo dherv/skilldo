@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { IconText } from "../styled/Globals.styled";
-import styles from "./TodoTimerStart.module.css";
+import { Container } from "./TodoTimerStart.styled";
 
 const TodoTimerStart: FC<Props> = ({ className, startDate }) => {
   var options = {
@@ -11,10 +11,10 @@ const TodoTimerStart: FC<Props> = ({ className, startDate }) => {
   };
   const startDateString = startDate.toLocaleDateString("en-US", options);
   return (
-    <div className={`${styles.container} ${className}`}>
+    <Container className={className}>
       <FontAwesomeIcon icon={faPlay} />
       <IconText as="span">{startDateString}</IconText>
-    </div>
+    </Container>
   );
 };
 

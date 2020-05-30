@@ -2,14 +2,14 @@ import React, { FC } from "react";
 import { ITodo } from "../types/interfaces";
 import TodoListTitle from "./TodoListTitle";
 import TodoList from "./TodoList";
-import styles from "./TodoListModule.module.css";
+import { Container } from "./TodoListModule.styled";
 
 const TodoListModule: FC<Props> = ({ title, todos, onToggleEdit }) => {
   return (
-    <div className={styles.wrapper}>
+    <Container>
       <TodoListTitle title={title} />
       <TodoList todos={todos} onToggleEdit={onToggleEdit} />
-    </div>
+    </Container>
   );
 };
 

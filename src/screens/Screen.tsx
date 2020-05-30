@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Nav from "../components/Nav";
 import TodoListModule from "../components/TodoListModule";
 import { todosData } from "./Screen.samples";
-import { Container } from "./Screen.styled";
+import { Container, Grid } from "./Screen.styled";
 import styles from "./Screen.module.css";
 
 const Screen: FC<Props> = () => {
@@ -16,7 +16,7 @@ const Screen: FC<Props> = () => {
       </header>
       <main className={styles.main}>
         <section>
-          <div className={styles.grid}>
+          <Grid>
             {todosData.map(({ id, todos, title }) => (
               <TodoListModule
                 key={id}
@@ -25,7 +25,7 @@ const Screen: FC<Props> = () => {
                 onToggleEdit={onToggleEdit}
               />
             ))}
-          </div>
+          </Grid>
         </section>
       </main>
     </Container>

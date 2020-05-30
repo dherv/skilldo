@@ -41,7 +41,8 @@ export const todosData: ITodoModule[] = [
     todos: [
       {
         id: 1,
-        title: "React Docs",
+        title:
+          "React Docs React Docs React Docs React Docs React Docs React Docs React Docs",
         type: "Book",
         startDate: new Date(),
         timerLength: 30,
@@ -92,6 +93,33 @@ export const todosData: ITodoModule[] = [
   {
     id: 4,
     title: "September",
+    todos: [
+      {
+        id: 1,
+        title: "React Docs",
+        type: "Book",
+        startDate: new Date(),
+        timerLength: 30,
+      },
+      {
+        id: 2,
+        title: "React",
+        type: "Framework",
+        startDate: new Date(),
+        timerLength: 30,
+      },
+      {
+        id: 3,
+        title: "NodeJS",
+        type: "Language",
+        startDate: new Date(),
+        timerLength: 30,
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "October",
     todos: [
       {
         id: 1,
