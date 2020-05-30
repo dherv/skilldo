@@ -3,7 +3,9 @@ import { render, screen } from "@testing-library/react";
 
 import Nav from "./Nav";
 
-const props = {};
+const props = {
+  title: "SkillDo",
+};
 
 test("it should display a the title", () => {
   render(<Nav {...props} />);

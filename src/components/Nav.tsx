@@ -2,8 +2,7 @@ import React, { FC } from "react";
 import NavTitle from "./NavTitle";
 import styles from "./Nav.module.css";
 
-const Nav: FC<Props> = () => {
-  const title = "SkillDo";
+const Nav: FC<Props> = ({ title }) => {
   return (
     <div className={styles.container}>
       <NavTitle title={title} />
@@ -11,6 +10,8 @@ const Nav: FC<Props> = () => {
   );
 };
 
-interface Props {}
+interface Props {
+  title: string;
+}
 
 export default Nav;
