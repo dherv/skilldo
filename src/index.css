@@ -1,5 +1,12 @@
 /* globals */
 
+:root {
+  --text-color-light-grey: #ada7a7;
+  --text-color: #484848;
+  --item-background: #f5f5f5;
+}
 html {
   font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: var(--text-color);
 }

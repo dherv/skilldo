@@ -5,8 +5,9 @@ import {
   GreenButton,
   OrangeButton,
 } from "../styled/Globals.styled";
+import { TType } from "../types/types";
 
-const TodoType: FC<Props> = ({ type }) => {
+const TodoType: FC<Props> = ({ className, type }) => {
   let components: ColorMap = {
     Book: RedButton,
     Language: GreenButton,
@@ -15,11 +16,16 @@ const TodoType: FC<Props> = ({ type }) => {
   };
   const letter = type.charAt(0);
   const TypeTodoButton = components[type];
-  return <TypeTodoButton>{letter}</TypeTodoButton>;
+  return (
+    <div className={className}>
+      <TypeTodoButton>{letter}</TypeTodoButton>
+    </div>
+  );
 };
 
 interface Props {
-  type: "Book" | "Language" | "Framework" | "Project";
+  className?: string;
+  type: TType;
 }
 interface ColorMap {
   [key: string]: ComponentType;
