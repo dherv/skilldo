@@ -1,8 +1,8 @@
 import React, { FC } from "react";
-import { Title } from "./TodoListTitle.styled";
+import { Heading } from "../styled/Headings.styled";
 
 const TodoListTitle: FC<Props> = ({ title }) => {
-  return <Title>{title}</Title>;
+  return <Heading.h3>{title}</Heading.h3>;
 };
 
 interface Props {
