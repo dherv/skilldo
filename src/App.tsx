@@ -1,12 +1,7 @@
 import React from "react";
-import TodoSettings from "./components/TodoSettings";
-
+import Screen from "./screens/Screen";
 function App() {
-  return (
-    <div>
-      <TodoSettings onTogglePopover={() => {}} />
-    </div>
-  );
+  return <Screen />;
 }
 
 export default App;
